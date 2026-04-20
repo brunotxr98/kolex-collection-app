@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolex Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Kolex Collection</h1>
+    <p class="subtitle">My personal collection tracker</p>
+
+    <form id="itemForm" class="card">
+      <h2>Add Item</h2>
+      <input type="text" id="name" placeholder="Item name" required />
+      <input type="text" id="model" placeholder="Model" />
+      <input type="number" id="year" placeholder="Year" />
+      <input type="text" id="condition" placeholder="Condition" />
+      <input type="number" id="price" placeholder="Purchase price" />
+      <input type="number" id="value" placeholder="Current value" />
+      <textarea id="notes" placeholder="Notes"></textarea>
+      <button type="submit">Add to Collection</button>
+    </form>
+
+    <div class="card">
+      <h2>My Items</h2>
+      <div id="collectionList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
